@@ -5,9 +5,9 @@ import { BsTelephoneFill } from "react-icons/bs";
 import { MdLocationPin } from "react-icons/md";
 
 
-// firstName, lastName, title, cell, email, image, country, city, registerDate, age
 
 const Card = ({data}) => {
+
     const {image} = data;
     const {firstName} = data;
     const {lastName} = data;
@@ -21,10 +21,12 @@ const Card = ({data}) => {
 
     return (
         <div className="card-container">
+
             <div className="card-row1">
                 <div className="image-div left">
                     <img className="image" src= {image} alt="" />
                 </div>
+
                 <div className="title-div right">
                     <p className="title-name"> {title} {firstName} {lastName}  </p>
                 </div>
@@ -32,8 +34,9 @@ const Card = ({data}) => {
 
             <div className="card-row2">
                 <div className="email-icon-div left">
-                <MdEmail />
+                    <MdEmail />
                 </div>
+
                 <div className="email-div right">
                     <p className="email"> {email}  </p>
                 </div>
@@ -43,6 +46,7 @@ const Card = ({data}) => {
                 <div className="cell-icon-div left">
                     <BsTelephoneFill />
                 </div>
+                
                 <div className="cell-div right">
                     {cell}
                 </div>
@@ -61,6 +65,7 @@ const Card = ({data}) => {
                 <p className="age"> Age: {age} </p>
                 <p> Register Date: {registerDate} </p>
             </div>
+
         </div>
     )
 }
