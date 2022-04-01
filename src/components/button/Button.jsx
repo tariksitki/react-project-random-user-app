@@ -1,9 +1,10 @@
 
+import "./Button.scss";
 
-const Button = () => {
+const Button = ({handleClick}) => {
     return (
-        <div>
-            <button>RANDOM USER</button>
+        <div className="button-div">
+            <button className="button" onClick={handleClick} >RANDOM USER</button>
         </div>
     )
 }

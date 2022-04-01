@@ -1,0 +1,93 @@
+
+
+.card-container {
+    height: 70vh;
+    width: 40vw;
+    background-color: #ffb8c6;
+    border: 1px solid white;
+    border-radius: 0 1.3rem 0 1.3rem;
+    outline: 1px solid black;
+    outline-offset: 1.5rem;
+    color: rgb(128, 128, 128);
+    
+    .card-row1 {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        
+        .image-div {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .image {
+                height: 68%;
+                width: 50%;
+                border-radius: 0px 15px 0px 15px;
+            }
+        }
+        .title-div {
+            color: black;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            border-bottom: 1px solid white;
+        }
+    } 
+    .card-row2 {
+        width: 100%;
+        display: flex;
+        height: 15%;
+        .email-icon-div {
+            font-size: 1.6rem;
+        }
+    } 
+    .card-row3 {
+        width: 100%;
+        display: flex;
+        height: 15%;
+        .cell-icon-div {
+            font-size: 1.5rem;
+        }
+    } 
+    .card-row4 {
+        width: 100%;
+        display: flex;
+        height: 15%;
+        .location-icon-div {
+            font-size: 1.7rem;
+        }
+    } 
+    .card-row5 {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 1.2rem;
+        color: black;
+        .age {
+            margin-bottom: 1rem;
+        }
+    } 
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    color: rgb(121, 120, 120);
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    font-size: 1.2rem;
+    color: black;
+}
